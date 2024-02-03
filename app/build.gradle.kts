@@ -70,15 +70,18 @@ dependencies {
 
     //CameraX
     val cameraxVersion = "1.3.0-rc01"
-
     implementation("androidx.camera:camera-core:$cameraxVersion")
     implementation("androidx.camera:camera-camera2:$cameraxVersion")
     implementation("androidx.camera:camera-lifecycle:$cameraxVersion")
     implementation("androidx.camera:camera-video:$cameraxVersion")
-
     implementation("androidx.camera:camera-view:$cameraxVersion")
     implementation("androidx.camera:camera-extensions:$cameraxVersion")
 
     //Accompanist
-    implementation("com.google.accompanist:accompanist-permissions:$0.32.0")
+    implementation("com.google.accompanist:accompanist-permissions:0.32.0")
+
+    //Camera
+    val lifecycle_version = "2.7.0"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycle_version")
 }
